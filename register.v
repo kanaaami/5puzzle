@@ -1,8 +1,8 @@
-module register(src0, src1, dst, we, data, clk, rst_n, data0, data1, cnt, org, comp);
+module register(src0, src1, dst, we, data, clk, rst_n, data0, data1, cnt, ord, comp);
 	input wire clk, rst_n, we;
 	input wire [3:0] src0, src1, dst;
 	input wire [17:0] data;
-	output wire [17:0] data0, data1, cnt, org;
+	output wire [17:0] data0, data1, cnt, ord;
 	output wire comp;
 
 	reg [17:0] regis [15:0];

@@ -70,7 +70,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 
 	always @(*) begin
 		if(comp) begin
-			case ((ord & (64'b11 << {num,1'b0})) >> {num,1'b0})
+			case ((ord & (18'b11 << {num,1'b0})) >> {num,1'b0})
 			// synopsys parallel_case
 			// synopsys full_case
 

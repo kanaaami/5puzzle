@@ -1,0 +1,641 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Fri Jul 14 09:36:35 2017
+# Process ID: 7496
+# Current directory: Z:/Documents/5puzzle/wagasha.runs/synth_1
+# Command line: vivado.exe -log test.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source test.tcl
+# Log file: Z:/Documents/5puzzle/wagasha.runs/synth_1/test.vds
+# Journal file: Z:/Documents/5puzzle/wagasha.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source test.tcl -notrace
+Command: synth_design -top test -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6624 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 323.766 ; gain = 113.625
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'test' [Z:/Documents/5puzzle/test.v:1]
+INFO: [Synth 8-638] synthesizing module 'top' [Z:/Documents/5puzzle/top.v:1]
+INFO: [Synth 8-638] synthesizing module 'sel' [Z:/Documents/5puzzle/sel.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sel' (1#1) [Z:/Documents/5puzzle/sel.v:1]
+INFO: [Synth 8-638] synthesizing module 'register' [Z:/Documents/5puzzle/register.v:1]
+WARNING: [Synth 8-3848] Net comp in module/entity register does not have driver. [Z:/Documents/5puzzle/register.v:6]
+INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [Z:/Documents/5puzzle/register.v:1]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/Documents/5puzzle/alu.v:1]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/alu.v:8]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/alu.v:8]
+INFO: [Synth 8-256] done synthesizing module 'alu' (3#1) [Z:/Documents/5puzzle/alu.v:1]
+INFO: [Synth 8-638] synthesizing module 'memory' [Z:/Documents/5puzzle/memory.v:1]
+INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [Z:/Documents/5puzzle/memory.v:1]
+INFO: [Synth 8-638] synthesizing module 'pc' [Z:/Documents/5puzzle/pc.v:1]
+INFO: [Synth 8-256] done synthesizing module 'pc' (5#1) [Z:/Documents/5puzzle/pc.v:1]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/Documents/5puzzle/imem.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/Documents/5puzzle/imem.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem' (6#1) [Z:/Documents/5puzzle/imem.v:1]
+INFO: [Synth 8-638] synthesizing module 'zf' [Z:/Documents/5puzzle/zf.v:1]
+INFO: [Synth 8-256] done synthesizing module 'zf' (7#1) [Z:/Documents/5puzzle/zf.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder' [Z:/Documents/5puzzle/decoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (8#1) [Z:/Documents/5puzzle/decoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'io' [Z:/Documents/5puzzle/io.v:1]
+	Parameter SEG_U bound to: 12'b000011000001 
+	Parameter SEG_P bound to: 12'b000010001100 
+	Parameter SEG_D bound to: 12'b000010100001 
+	Parameter SEG_O bound to: 12'b000010100011 
+	Parameter SEG_L bound to: 12'b000011000111 
+	Parameter SEG_E bound to: 12'b000010000110 
+	Parameter SEG_R bound to: 12'b000010001000 
+	Parameter SEG_I bound to: 12'b000011111001 
+	Parameter SEG_S bound to: 12'b000010010010 
+	Parameter SEG_0 bound to: 12'b000011000000 
+	Parameter SEG_1 bound to: 12'b000011111001 
+	Parameter SEG_2 bound to: 12'b000010100100 
+	Parameter SEG_3 bound to: 12'b000010110000 
+	Parameter SEG_4 bound to: 12'b000010011001 
+	Parameter SEG_5 bound to: 12'b000010010010 
+	Parameter SEG_6 bound to: 12'b000010000010 
+	Parameter SEG_7 bound to: 12'b000011011000 
+	Parameter SEG_8 bound to: 12'b000010000000 
+	Parameter SEG_9 bound to: 12'b000010010000 
+	Parameter UE bound to: 28'b0000000000000000000000000000 
+	Parameter SHITA bound to: 28'b0000000000000000000000000000 
+	Parameter HIDARI bound to: 28'b0000000000000000000000000000 
+	Parameter MIGI bound to: 28'b0000000000000000000000000000 
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:73]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:73]
+WARNING: [Synth 8-151] case item 28'b0000000000000000000000000000 is unreachable [Z:/Documents/5puzzle/io.v:73]
+WARNING: [Synth 8-151] case item 28'b0000000000000000000000000000 is unreachable [Z:/Documents/5puzzle/io.v:73]
+WARNING: [Synth 8-151] case item 28'b0000000000000000000000000000 is unreachable [Z:/Documents/5puzzle/io.v:73]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:102]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:102]
+INFO: [Synth 8-256] done synthesizing module 'io' (9#1) [Z:/Documents/5puzzle/io.v:1]
+INFO: [Synth 8-638] synthesizing module 'divider' [Z:/Documents/5puzzle/divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'divider' (10#1) [Z:/Documents/5puzzle/divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top' (11#1) [Z:/Documents/5puzzle/top.v:1]
+WARNING: [Synth 8-85] always block has no event control specified [Z:/Documents/5puzzle/test.v:6]
+INFO: [Synth 8-256] done synthesizing module 'test' (12#1) [Z:/Documents/5puzzle/test.v:1]
+WARNING: [Synth 8-3331] design io has unconnected port ord[17]
+WARNING: [Synth 8-3331] design io has unconnected port ord[16]
+WARNING: [Synth 8-3331] design io has unconnected port ord[15]
+WARNING: [Synth 8-3331] design io has unconnected port ord[14]
+WARNING: [Synth 8-3331] design io has unconnected port ord[13]
+WARNING: [Synth 8-3331] design io has unconnected port ord[12]
+WARNING: [Synth 8-3331] design io has unconnected port ord[11]
+WARNING: [Synth 8-3331] design io has unconnected port ord[10]
+WARNING: [Synth 8-3331] design io has unconnected port ord[9]
+WARNING: [Synth 8-3331] design io has unconnected port ord[8]
+WARNING: [Synth 8-3331] design io has unconnected port ord[7]
+WARNING: [Synth 8-3331] design io has unconnected port ord[6]
+WARNING: [Synth 8-3331] design io has unconnected port ord[5]
+WARNING: [Synth 8-3331] design io has unconnected port ord[4]
+WARNING: [Synth 8-3331] design io has unconnected port ord[3]
+WARNING: [Synth 8-3331] design io has unconnected port ord[2]
+WARNING: [Synth 8-3331] design io has unconnected port ord[1]
+WARNING: [Synth 8-3331] design io has unconnected port ord[0]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[19]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[18]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[17]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[16]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[15]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[14]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[13]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[12]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[11]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[10]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[9]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[8]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[7]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[6]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[5]
+WARNING: [Synth 8-3331] design decoder has unconnected port op[4]
+WARNING: [Synth 8-3331] design decoder has unconnected port zf
+WARNING: [Synth 8-3331] design memory has unconnected port in[17]
+WARNING: [Synth 8-3331] design memory has unconnected port in[16]
+WARNING: [Synth 8-3331] design memory has unconnected port in[15]
+WARNING: [Synth 8-3331] design memory has unconnected port in[14]
+WARNING: [Synth 8-3331] design memory has unconnected port in[13]
+WARNING: [Synth 8-3331] design memory has unconnected port in[12]
+WARNING: [Synth 8-3331] design memory has unconnected port in[11]
+WARNING: [Synth 8-3331] design memory has unconnected port in[10]
+WARNING: [Synth 8-3331] design memory has unconnected port in[9]
+WARNING: [Synth 8-3331] design memory has unconnected port in[8]
+WARNING: [Synth 8-3331] design memory has unconnected port in[7]
+WARNING: [Synth 8-3331] design memory has unconnected port in[6]
+WARNING: [Synth 8-3331] design memory has unconnected port in[5]
+WARNING: [Synth 8-3331] design memory has unconnected port in[4]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[17]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[16]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[15]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[14]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[13]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[12]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[11]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[10]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[9]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[8]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[7]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[6]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[5]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[4]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[3]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[2]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[1]
+WARNING: [Synth 8-3331] design alu has unconnected port in0[0]
+WARNING: [Synth 8-3331] design register has unconnected port comp
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 361.039 ; gain = 150.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 361.039 ; gain = 150.898
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:11 . Memory (MB): peak = 361.039 ; gain = 150.898
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-5544] ROM "regis_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[14]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[13]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[12]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[11]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[10]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[9]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[8]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[7]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[6]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[5]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[4]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[3]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[2]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[1]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "regis_reg[0]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "alu_op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pc_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/Documents/5puzzle/io.v:53]
+INFO: [Synth 8-5546] ROM "digit" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [Z:/Documents/5puzzle/alu.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'op_reg' [Z:/Documents/5puzzle/imem.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_in_reg' [Z:/Documents/5puzzle/decoder.v:16]
+WARNING: [Synth 8-327] inferring latch for variable 'src0_reg' [Z:/Documents/5puzzle/decoder.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'src1_reg' [Z:/Documents/5puzzle/decoder.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'dst_reg' [Z:/Documents/5puzzle/decoder.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_we_reg' [Z:/Documents/5puzzle/decoder.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'sel1_reg' [Z:/Documents/5puzzle/decoder.v:19]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [Z:/Documents/5puzzle/decoder.v:21]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [Z:/Documents/5puzzle/decoder.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[0]' [Z:/Documents/5puzzle/io.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[1]' [Z:/Documents/5puzzle/io.v:106]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:12 . Memory (MB): peak = 432.902 ; gain = 222.762
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 2     
++---Registers : 
+	               18 Bit    Registers := 16    
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                4 Bit    Registers := 17    
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input     18 Bit        Muxes := 18    
+	  60 Input     18 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  32 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      4 Bit        Muxes := 19    
+	   2 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 16    
+	  61 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 27    
+	   3 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module sel 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 1     
+Module register 
+Detailed RTL Component Info : 
++---Registers : 
+	               18 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     18 Bit        Muxes := 16    
+	   4 Input      1 Bit        Muxes := 16    
+Module alu 
+Detailed RTL Component Info : 
++---Muxes : 
+	  60 Input     18 Bit        Muxes := 1     
+	  61 Input      1 Bit        Muxes := 1     
+Module memory 
+Detailed RTL Component Info : 
++---Registers : 
+	                4 Bit    Registers := 16    
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 16    
+	   3 Input      1 Bit        Muxes := 16    
+Module pc 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module imem 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module zf 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 6     
+Module io 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               12 Bit    Registers := 1     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
++---Muxes : 
+	   6 Input      8 Bit        Muxes := 1     
+	  32 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+Module divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[15]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[14]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[13]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[12]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[11]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[10]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[9]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[8]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[7]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[6]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[5]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[4]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[3]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[2]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[1]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/mem0/mem_reg[0]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "top0/io0/digit" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[17]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[16]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[15]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[14]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[13]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[12]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[11]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[10]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[9]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[8]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[7]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[6]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[5]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[4]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/a0/out_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[31]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[30]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[29]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[28]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[27]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[26]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[25]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[24]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[23]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[22]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[21]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[20]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[19]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[18]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[17]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[16]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[15]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[14]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[13]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[12]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[11]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[10]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[9]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[8]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[7]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[6]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[5]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[4]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/imem0/op_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/pc_in_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/pc_in_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/pc_in_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/pc_in_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src0_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src0_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src0_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src0_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src1_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src1_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src1_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/src1_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/dst_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/dst_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/dst_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/dst_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/reg_we_reg) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/sel1_reg) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[17]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[16]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[15]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[14]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[13]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[12]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[11]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[10]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[9]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[8]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[7]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[6]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[5]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[4]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/data_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/alu_op_reg[3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/alu_op_reg[2]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/alu_op_reg[1]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/dec1/alu_op_reg[0]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][11]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][10]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][9]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][8]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][7]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][6]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][5]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][4]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][3]) is unused and will be removed from module test.
+WARNING: [Synth 8-3332] Sequential element (top0/io0/buff_reg[0][2]) is unused and will be removed from module test.
+INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------+---------------+---------------+----------------+
+|Module Name | RTL Object    | Depth x Width | Implemented As | 
++------------+---------------+---------------+----------------+
+|io          | buff          | 32x8          | LUT            | 
+|test        | top0/io0/buff | 32x8          | LUT            | 
++------------+---------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++-+-----+------+
+| |Cell |Count |
++-+-----+------+
++-+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |     0|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 581 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:08 ; elapsed = 00:00:11 . Memory (MB): peak = 499.355 ; gain = 245.566
+Synthesis Optimization Complete : Time (s): cpu = 00:00:11 ; elapsed = 00:00:16 . Memory (MB): peak = 499.355 ; gain = 289.215
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+138 Infos, 185 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:10 ; elapsed = 00:00:13 . Memory (MB): peak = 560.539 ; gain = 321.406
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/5puzzle/wagasha.runs/synth_1/test.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 560.539 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 14 09:36:54 2017...
