@@ -1,8 +1,8 @@
 module alu(in0, in1, op, zf, out);
-	input wire [17:0] in0, in1;
+	input wire [39:0] in0, in1;
 	input wire [3:0] op;
 	output reg zf;
-	output reg [17:0] out;
+	output reg [39:0] out;
 
 always @(*) begin
 	case (op)

@@ -3,7 +3,7 @@ module decoder(op, zf, pc_in, pc_we, src0, src1, dst, reg_we, sel1, sel2, data, 
 		input wire zf;
 		output reg pc_we, reg_we, mem_we, sel1, sel2;
 		output reg [3:0] pc_in, alu_op, src0, src1, dst;
-		output reg [17:0] data;
+		output reg [39:0] data;
 
 	always @(*) begin
 		case (op[31:28])

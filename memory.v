@@ -1,7 +1,7 @@
 module memory(clk, rst_n, in, addr, we, out);
 	input wire clk, rst_n, we;
-	input wire [17:0] in, addr;
-	output wire [17:0] out;
+	input wire [39:0] in, addr;
+	output wire [39:0] out;
 
 	reg [3:0] mem [15:0];
 	wire [3:0] mem0, mem1, mem2, mem3, mem4, mem5, mem6, mem7, mem8, mem9, mem10, mem11, mem12, mem13, mem14, mem15;
