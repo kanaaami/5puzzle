@@ -49,14 +49,12 @@ start_step init_design
 set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
-  set_property design_mode GateLvl [current_fileset]
-  set_param project.singleFileAddWarning.threshold 0
+  reset_param project.defaultXPMLibraries 
+  open_checkpoint Z:/Documents/5puzzle/wagasha.runs/impl_1/test.dcp
   set_property webtalk.parent_dir Z:/Documents/5puzzle/wagasha.cache/wt [current_project]
   set_property parent.project_path Z:/Documents/5puzzle/wagasha.xpr [current_project]
   set_property ip_output_repo Z:/Documents/5puzzle/wagasha.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet Z:/Documents/5puzzle/wagasha.runs/synth_1/test.dcp
-  link_design -top test -part xc7a35tcpg236-1
   write_hwdef -file test.hwdef
   close_msg_db -file init_design.pb
 } RESULT]

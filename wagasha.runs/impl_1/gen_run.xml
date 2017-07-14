@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1499994543">
-  <File Type="PWROPT-DRC" Name="test_drc_pwropted.rpt"/>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1499997267">
+  <File Type="PLACE-DCP" Name="test_placed.dcp"/>
+  <File Type="PA-DCP" Name="test.dcp"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="test_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="test_timing_summary_init.rpt"/>
   <File Type="ROUTE-PWR-RPX" Name="test_power_routed.rpx"/>
@@ -11,8 +12,8 @@
   <File Type="OPT-DRC" Name="test_drc_opted.rpt"/>
   <File Type="OPT-TIMING" Name="test_timing_summary_opted.rpt"/>
   <File Type="PWROPT-DCP" Name="test_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="test_drc_pwropted.rpt"/>
   <File Type="PWROPT-TIMING" Name="test_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="test_placed.dcp"/>
   <File Type="PLACE-IO" Name="test_io_placed.rpt"/>
   <File Type="PLACE-CLK" Name="test_clock_utilization_placed.rpt"/>
   <File Type="PLACE-UTIL" Name="test_utilization_placed.rpt"/>
@@ -62,13 +63,6 @@
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
-    <File Path="$PPRDIR/zf.v">
-      <FileInfo>
-        <Attr Name="UsedIn" Val="synthesis"/>
-        <Attr Name="UsedIn" Val="implementation"/>
-        <Attr Name="UsedIn" Val="simulation"/>
-      </FileInfo>
-    </File>
     <File Path="$PPRDIR/alu.v">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>

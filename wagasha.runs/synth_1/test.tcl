@@ -16,7 +16,6 @@ set_property target_language Verilog [current_project]
 set_property ip_output_repo z:/Documents/5puzzle/wagasha.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib {
-  Z:/Documents/5puzzle/zf.v
   Z:/Documents/5puzzle/alu.v
   Z:/Documents/5puzzle/imem.v
   Z:/Documents/5puzzle/memory.v
