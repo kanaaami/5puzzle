@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Fri Jul 14 11:28:37 2017">
+<application name="pa" timeStamp="Fri Jul 14 15:28:48 2017">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="84c97f4033f043aa92543519b6d04411" type="ProjectID"/>
-<property name="ProjectIteration" value="6" type="ProjectIteration"/>
+<property name="ProjectIteration" value="8" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -19,32 +19,36 @@ This means code written to parse this file will need to be revisited each subseq
 <item name="Java Command Handlers">
 <property name="AddSources" value="2" type="JavaHandler"/>
 <property name="ConfigureBitstream" value="1" type="JavaHandler"/>
-<property name="EditDelete" value="1" type="JavaHandler"/>
-<property name="OpenProject" value="2" type="JavaHandler"/>
+<property name="EditDelete" value="2" type="JavaHandler"/>
+<property name="OpenProject" value="3" type="JavaHandler"/>
 <property name="ProjectSettingsCmdHandler" value="2" type="JavaHandler"/>
-<property name="RunImplementation" value="6" type="JavaHandler"/>
-<property name="RunSynthesis" value="9" type="JavaHandler"/>
+<property name="RunBitgen" value="1" type="JavaHandler"/>
+<property name="RunImplementation" value="7" type="JavaHandler"/>
+<property name="RunSynthesis" value="10" type="JavaHandler"/>
+<property name="SaveDesign" value="1" type="JavaHandler"/>
 <property name="SaveFileProxyHandler" value="2" type="JavaHandler"/>
 <property name="ShowIONets" value="2" type="JavaHandler"/>
 <property name="ShowPowerEstimation" value="1" type="JavaHandler"/>
-<property name="ShowView" value="8" type="JavaHandler"/>
+<property name="ShowView" value="9" type="JavaHandler"/>
 <property name="SimulationRun" value="2" type="JavaHandler"/>
 <property name="TogglePackageViewDisplayMode" value="2" type="JavaHandler"/>
-<property name="ViewLayoutCmd" value="9" type="JavaHandler"/>
-<property name="ViewTaskSynthesis" value="2" type="JavaHandler"/>
+<property name="ViewLayoutCmd" value="10" type="JavaHandler"/>
+<property name="ViewTaskProjectManager" value="1" type="JavaHandler"/>
+<property name="ViewTaskSynthesis" value="4" type="JavaHandler"/>
 </item>
 <item name="Gui Resources Info">
 <property name="BaseDialog_APPLY" value="1" type="GuiResourceData"/>
-<property name="BaseDialog_CANCEL" value="6" type="GuiResourceData"/>
-<property name="BaseDialog_OK" value="23" type="GuiResourceData"/>
-<property name="BaseDialog_YES" value="1" type="GuiResourceData"/>
+<property name="BaseDialog_CANCEL" value="7" type="GuiResourceData"/>
+<property name="BaseDialog_OK" value="30" type="GuiResourceData"/>
+<property name="BaseDialog_YES" value="2" type="GuiResourceData"/>
 <property name="CmdMsgDialog_OK" value="1" type="GuiResourceData"/>
 <property name="ConfigureBitstreamDialog_TOC_LIST" value="3" type="GuiResourceData"/>
+<property name="CreateConstraintsFilePanel_FILE_NAME" value="1" type="GuiResourceData"/>
 <property name="DeviceConstraintsView_INTERNAL_VREF_TREE" value="5" type="GuiResourceData"/>
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="5" type="GuiResourceData"/>
-<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="80" type="GuiResourceData"/>
-<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="37" type="GuiResourceData"/>
-<property name="GettingStartedView_OPEN_PROJECT" value="2" type="GuiResourceData"/>
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="89" type="GuiResourceData"/>
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="43" type="GuiResourceData"/>
+<property name="GettingStartedView_OPEN_PROJECT" value="3" type="GuiResourceData"/>
 <property name="GraphicalView_SELECT" value="1" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_IN" value="2" type="GuiResourceData"/>
 <property name="GraphicalView_ZOOM_OUT" value="3" type="GuiResourceData"/>
@@ -57,7 +61,8 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="MainMenuMgr_TOOLS" value="6" type="GuiResourceData"/>
 <property name="MainMenuMgr_WINDOW" value="4" type="GuiResourceData"/>
 <property name="MainWinMenuMgr_LAYOUT" value="2" type="GuiResourceData"/>
-<property name="MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT" value="9" type="GuiResourceData"/>
+<property name="MainWinToolbarMgr_SELECT_OR_SAVE_WINDOW_LAYOUT" value="10" type="GuiResourceData"/>
+<property name="MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN" value="1" type="GuiResourceData"/>
 <property name="MsgTreePanel_MESSAGE_SEVERITY" value="1" type="GuiResourceData"/>
 <property name="MsgTreePanel_MESSAGE_VIEW_TREE" value="20" type="GuiResourceData"/>
 <property name="MsgView_INFORMATION_MESSAGES" value="2" type="GuiResourceData"/>
@@ -71,40 +76,39 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_GOTO_NETLIST_DESIGN" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_IMPL_SETTINGS" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_PACKAGE_PINS_WINDOW" value="1" type="GuiResourceData"/>
-<property name="PACommandNames_RUN_IMPLEMENTATION" value="4" type="GuiResourceData"/>
-<property name="PACommandNames_RUN_SYNTHESIS" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_BITGEN" value="1" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_IMPLEMENTATION" value="5" type="GuiResourceData"/>
+<property name="PACommandNames_RUN_SYNTHESIS" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_SHOW_IO_NETS" value="2" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_RUN" value="5" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="1" type="GuiResourceData"/>
 <property name="PACommandNames_TOP_PACKAGE_VIEW" value="1" type="GuiResourceData"/>
 <property name="PAGraphicalView_VIEW" value="2" type="GuiResourceData"/>
-<property name="PAViews_CODE" value="2" type="GuiResourceData"/>
+<property name="PAViews_CODE" value="3" type="GuiResourceData"/>
 <property name="PAViews_DEVICE" value="12" type="GuiResourceData"/>
 <property name="PAViews_PACKAGE" value="16" type="GuiResourceData"/>
 <property name="PackageTreePanel_PACKAGE_TREE_PANEL" value="20" type="GuiResourceData"/>
 <property name="ProjectSettingsIPPage_TABBED_PANE" value="2" type="GuiResourceData"/>
+<property name="ProjectTab_RELOAD" value="1" type="GuiResourceData"/>
 <property name="RDICommands_CUSTOM_COMMANDS" value="3" type="GuiResourceData"/>
-<property name="RDICommands_DELETE" value="1" type="GuiResourceData"/>
+<property name="RDICommands_DELETE" value="2" type="GuiResourceData"/>
 <property name="RDICommands_SAVE_FILE" value="1" type="GuiResourceData"/>
 <property name="RDIViews_WAVEFORM_VIEWER" value="10" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_ERROR" value="1" type="GuiResourceData"/>
 <property name="RunGadget_SHOW_WARNING_AND_ERROR_MESSAGES_IN_MESSAGES" value="3" type="GuiResourceData"/>
 <property name="SaveProjectUtils_DONT_SAVE" value="1" type="GuiResourceData"/>
 <property name="SaveProjectUtils_SAVE" value="3" type="GuiResourceData"/>
-<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="14" type="GuiResourceData"/>
+<property name="SignalTreePanel_SIGNAL_TREE_TABLE" value="54" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT" value="1" type="GuiResourceData"/>
 <property name="SrcChooserPanel_ADD_OR_CREATE_SOURCE_FILE" value="1" type="GuiResourceData"/>
 <property name="SrcMenu_IP_HIERARCHY" value="1" type="GuiResourceData"/>
+<property name="StaleMoreAction_FORCE_UP_TO_DATE" value="3" type="GuiResourceData"/>
+<property name="StaleMoreAction_OUT_OF_DATE_DETAILS" value="3" type="GuiResourceData"/>
 <property name="WaveformNameTree_WAVEFORM_NAME_TREE" value="2" type="GuiResourceData"/>
 <property name="WaveformView_ADD_MARKER" value="2" type="GuiResourceData"/>
 <property name="WaveformView_GOTO_LAST_TIME" value="4" type="GuiResourceData"/>
 <property name="WaveformView_NEXT_TRANSITION" value="3" type="GuiResourceData"/>
-</item>
-<item name="Other">
-<property name="GuiMode" value="4" type="GuiMode"/>
-<property name="BatchMode" value="0" type="BatchMode"/>
-<property name="TclMode" value="3" type="TclMode"/>
 </item>
 </section>
 </application>
