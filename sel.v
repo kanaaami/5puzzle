@@ -8,4 +8,5 @@ module sel(in0, in1, sel, out);
 		if(sel) out = in1;
 		else out = in0;
 	end
+
 endmodule
