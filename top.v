@@ -12,25 +12,25 @@ module top(mclk, rst_n, seg, btn);
 
 	//decoder
 	wire [3:0] dst, src0, src1;
-	wire [17:0] dec_data;
+	wire [39:0] dec_data;
 
 	//alu
 	wire [3:0] alu_op;
-	wire [17:0] alu_out;
+	wire [39:0] alu_out;
 
 	//zf
 	wire zf, zf_out;
 
 	//selector
 	wire sel1, sel2;
-	wire [17:0] sel1_out, sel2_out;
+	wire [39:0] sel1_out, sel2_out;
 
 	//register
-	wire [17:0] reg_data0, reg_data1, cnt, ord;
+	wire [39:0] reg_data0, reg_data1, cnt, ord;
 	wire comp;
 
 	//memory
-	wire [17:0] mem_data;
+	wire [39:0] mem_data;
 
 	//divider
 	wire clk;

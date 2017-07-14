@@ -1,6 +1,6 @@
 module io(comp, cnt, ord, btn, seg, clk, rst_n);
 	input comp, clk, rst_n;
-	input [17:0] cnt, ord;
+	input [39:0] cnt, ord;
 	input [4:0] btn;
 	output reg [11:0] seg;
 	reg [4:0] num, btn_flag;
@@ -70,7 +70,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 
 	always @(*) begin
 		if(comp) begin
-			case ((ord & (18'b11 << {num,1'b0})) >> {num,1'b0})
+			case ((ord & (40'b11 << {num,1'b0})) >> {num,1'b0})
 			// synopsys parallel_case
 			// synopsys full_case
 
