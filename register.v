@@ -40,6 +40,7 @@ end
 assign data0 = regis[src0];
 assign data1 = regis[src1];
 assign cnt = regis[1];
-assign ord = regis[2];
+assign ord = regis[0];
+assign comp = 1;
 
 endmodule

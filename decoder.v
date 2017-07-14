@@ -20,8 +20,22 @@ module decoder(op, pc_in, pc_we, src0, src1, dst, reg_we, sel1, sel2, data, alu_
 		data <= 0;
 		mem_we <= 0;
 	end
-
+	
 	1 : begin
+            alu_op <= op[31:28];
+            dst <= op[27:24];
+            src1 <= op[23:20];
+            src0 <= 0;
+            pc_in <= 0;
+            pc_we <= 0;
+            reg_we <= 1;
+            sel1 <= 0;
+            sel2 <= 0;
+            data <= 0;
+            mem_we <= 0;
+        end
+
+	2 : begin
 		pc_in <= op[3:0];
 		pc_we <= 1;
 	end
