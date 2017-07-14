@@ -1,7 +1,6 @@
-module alu(in0, in1, op, zf, out);
+module alu(in0, in1, op, out);
 	input wire [39:0] in0, in1;
 	input wire [3:0] op;
-	output reg zf;
 	output reg [39:0] out;
 
 always @(*) begin
@@ -129,17 +128,14 @@ always @(*) begin
 			out <= 16'b10_00_10_01_11_00_11_01;
 		else if (in1 == 18'b101100011010001000)
 			out <= 28'b00_10_10_01_11_00_11_01_10_00_10_01_11_11;
-		zf <= 0;
 	end
 
 	1 : begin
 		out <= 0;
-		zf <= 0;
 	end
 
 	default : begin
 		out <= 0;
-		zf <= 0;
 	end
 
 	endcase

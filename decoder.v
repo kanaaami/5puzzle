@@ -1,6 +1,5 @@
-module decoder(op, zf, pc_in, pc_we, src0, src1, dst, reg_we, sel1, sel2, data, alu_op, mem_we);
+module decoder(op, pc_in, pc_we, src0, src1, dst, reg_we, sel1, sel2, data, alu_op, mem_we);
 		input wire [31:0] op;
-		input wire zf;
 		output reg pc_we, reg_we, mem_we, sel1, sel2;
 		output reg [3:0] pc_in, alu_op, src0, src1, dst;
 		output reg [39:0] data;
