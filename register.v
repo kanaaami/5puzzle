@@ -10,7 +10,7 @@ module register(src0, src1, dst, we, data, clk, rst_n, data0, data1, cnt, ord, c
 always @(posedge clk) begin
 	if (!rst_n) begin
 
-		regis[0] <= 18'b001_010_011_100_101_000;
+		regis[0] <= 18'b001_010_100_101_011_000;
 		regis[1] <= 0;
 		regis[2] <= 0;
 		regis[3] <= 0;
