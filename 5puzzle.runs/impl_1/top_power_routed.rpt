@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Wed Jul 19 10:18:49 2017
+| Date             : Wed Jul 19 11:20:04 2017
 | Host             : DESKTOP-5F6G55S running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------+
-| Total On-Chip Power (W)  | 0.077  |
+| Total On-Chip Power (W)  | 0.078  |
 | Dynamic (W)              | 0.006  |
 | Device Static (W)        | 0.072  |
 | Effective TJA (C/W)      | 5.0    |
@@ -50,17 +50,17 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        4 |       --- |             --- |
-| Slice Logic    |     0.002 |     1185 |       --- |             --- |
-|   LUT as Logic |     0.002 |      814 |     20800 |            3.91 |
-|   Register     |    <0.001 |      201 |     41600 |            0.48 |
+| Slice Logic    |     0.002 |     1210 |       --- |             --- |
+|   LUT as Logic |     0.002 |      835 |     20800 |            4.01 |
+|   Register     |    <0.001 |      202 |     41600 |            0.49 |
 |   CARRY4       |    <0.001 |       20 |      8150 |            0.25 |
-|   F7/F8 Muxes  |    <0.001 |       26 |     32600 |            0.08 |
+|   F7/F8 Muxes  |    <0.001 |       25 |     32600 |            0.08 |
 |   Others       |     0.000 |       13 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |     0.002 |     1049 |       --- |             --- |
+| Signals        |     0.002 |     1079 |       --- |             --- |
 | I/O            |    <0.001 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.077 |          |           |                 |
+| Total          |     0.078 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
