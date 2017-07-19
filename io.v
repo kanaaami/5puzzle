@@ -30,10 +30,10 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 		SEG_9 = 8'b1_0010000;
 
 	parameter
-		UE = 28'b0,
-		SHITA = 28'b0,
-		HIDARI = 28'b0,
-		MIGI = 28'b0;
+		UE = 2'b00,
+		SHITA = 2'b01,
+		HIDARI = 2'b10,
+		MIGI = 2'b11;
 
 	always @(posedge clk) begin
 		if(!rst_n) begin
@@ -70,7 +70,7 @@ module io(comp, cnt, ord, btn, seg, clk, rst_n);
 
 	always @(*) begin
 		if(comp) begin
-			case ((ord & (40'b11 << {num,1'b0})) >> {num,1'b0})
+			case ((ord & (40'b11 << {cnt-num,1'b0})) >> {cnt-num,1'b0})
 			// synopsys parallel_case
 			// synopsys full_case
 

@@ -2,7 +2,7 @@ set_property BITSTREAM.GENERAL.COMPRESS TRUE [current_design]
 set_property BITSTREAM.CONFIG.CONFIGRATE 33 [current_design]
 set_property CONFIG_MODE SPIx4 [current_design]
 set_property PACKAGE_PIN W5 [get_ports mclk]
-set_property PACKAGE_PIN U17 [get_ports rst_n]
+set_property PACKAGE_PIN V17 [get_ports rst_n]
 set_property IOSTANDARD LVCMOS33 [get_ports mclk]
 set_property IOSTANDARD LVCMOS33 [get_ports rst_n]
 set_property PACKAGE_PIN W4 [get_ports {seg[11]}]
@@ -41,3 +41,8 @@ create_generated_clock -name {div0/cnt_reg[1]_0[0]} -source [get_ports mclk] -di
 
 set_property PACKAGE_PIN W19 [get_ports {btn[4]}]
 set_property PACKAGE_PIN T17 [get_ports {btn[3]}]
+
+
+set_property PACKAGE_PIN T18 [get_ports {btn[2]}]
+set_property PACKAGE_PIN U17 [get_ports {btn[1]}]
+set_property PACKAGE_PIN U18 [get_ports {btn[0]}]
