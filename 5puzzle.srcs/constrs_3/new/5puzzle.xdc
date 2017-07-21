@@ -36,7 +36,7 @@ set_property IOSTANDARD LVCMOS33 [get_ports {btn[1]}]
 set_property IOSTANDARD LVCMOS33 [get_ports {btn[2]}]
 
 
-create_clock -period 100.000 -name mclk -waveform {0.000 50.000} [get_ports mclk]
+create_clock -period 1000000.000 -name mclk -waveform {0.000 500000.000} [get_ports mclk]
 create_generated_clock -name {div0/cnt_reg[1]_0[0]} -source [get_ports mclk] -divide_by 1 [get_pins {div0/cnt_reg[1]/Q}]
 
 set_property PACKAGE_PIN W19 [get_ports {btn[4]}]
@@ -46,4 +46,6 @@ set_property PACKAGE_PIN T17 [get_ports {btn[3]}]
 set_property PACKAGE_PIN T18 [get_ports {btn[2]}]
 set_property PACKAGE_PIN U17 [get_ports {btn[1]}]
 set_property PACKAGE_PIN U18 [get_ports {btn[0]}]
+
+
 

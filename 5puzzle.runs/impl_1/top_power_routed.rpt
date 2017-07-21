@@ -1,7 +1,7 @@
 Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2016.4 (win64) Build 1756540 Mon Jan 23 19:11:23 MST 2017
-| Date             : Fri Jul 21 09:36:52 2017
+| Date             : Fri Jul 21 10:17:57 2017
 | Host             : c04-c044 running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -31,7 +31,7 @@ Table of Contents
 
 +--------------------------+--------+
 | Total On-Chip Power (W)  | 0.072  |
-| Dynamic (W)              | 0.001  |
+| Dynamic (W)              | 0.000  |
 | Device Static (W)        | 0.072  |
 | Effective TJA (C/W)      | 5.0    |
 | Max Ambient (C)          | 84.6   |
@@ -57,7 +57,7 @@ Table of Contents
 |   F7/F8 Muxes  |    <0.001 |       25 |     32600 |            0.08 |
 |   Others       |     0.000 |       13 |       --- |             --- |
 |   BUFG         |     0.000 |        1 |        32 |            3.13 |
-| Signals        |    <0.001 |     1079 |       --- |             --- |
+| Signals        |    <0.001 |     1078 |       --- |             --- |
 | I/O            |    <0.001 |       16 |       106 |           15.09 |
 | Static Power   |     0.072 |          |           |                 |
 | Total          |     0.072 |          |           |                 |
@@ -70,7 +70,7 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.010 |       0.001 |      0.010 |
+| Vccint    |       1.000 |     0.010 |       0.000 |      0.010 |
 | Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |
 | Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
@@ -126,8 +126,8 @@ Table of Contents
 +----------------------+----------------------+-----------------+
 | Clock                | Domain               | Constraint (ns) |
 +----------------------+----------------------+-----------------+
-| div0/cnt_reg[1]_0[0] | div0/cnt_reg[1]_0[0] |           100.0 |
-| mclk                 | mclk                 |           100.0 |
+| div0/cnt_reg[1]_0[0] | div0/cnt_reg[1]_0[0] |        999999.9 |
+| mclk                 | mclk                 |        999999.9 |
 +----------------------+----------------------+-----------------+
 
 
