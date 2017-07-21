@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="17" Path="C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.xpr">
+<Project Version="7" Minor="17" Path="Z:/Documents/5puzzle/5puzzle.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="5431365deb1e4861ab662dadca3c14e6"/>

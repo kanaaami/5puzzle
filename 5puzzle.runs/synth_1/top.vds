@@ -2,12 +2,12 @@
 # Vivado v2016.4 (64-bit)
 # SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
 # IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
-# Start of session at: Wed Jul 19 12:52:33 2017
-# Process ID: 20432
-# Current directory: C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.runs/synth_1
+# Start of session at: Fri Jul 21 09:20:49 2017
+# Process ID: 7492
+# Current directory: Z:/Documents/5puzzle/5puzzle.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.runs/synth_1/top.vds
-# Journal file: C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.runs/synth_1\vivado.jou
+# Log file: Z:/Documents/5puzzle/5puzzle.runs/synth_1/top.vds
+# Journal file: Z:/Documents/5puzzle/5puzzle.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
 source top.tcl -notrace
 Command: synth_design -top top -part xc7a35tcpg236-1
@@ -15,29 +15,29 @@ Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 23440 
+INFO: Helper process launched with PID 7896 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 277.242 ; gain = 66.898
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 323.055 ; gain = 112.648
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-638] synthesizing module 'top' [C:/Users/kanami/Documents/GitHub/5puzzle/top.v:1]
-INFO: [Synth 8-638] synthesizing module 'sel' [C:/Users/kanami/Documents/GitHub/5puzzle/sel.v:1]
-INFO: [Synth 8-256] done synthesizing module 'sel' (1#1) [C:/Users/kanami/Documents/GitHub/5puzzle/sel.v:1]
-INFO: [Synth 8-638] synthesizing module 'register' [C:/Users/kanami/Documents/GitHub/5puzzle/register.v:1]
-INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [C:/Users/kanami/Documents/GitHub/5puzzle/register.v:1]
-INFO: [Synth 8-638] synthesizing module 'alu' [C:/Users/kanami/Documents/GitHub/5puzzle/alu.v:1]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/alu.v:7]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/alu.v:7]
-INFO: [Synth 8-256] done synthesizing module 'alu' (3#1) [C:/Users/kanami/Documents/GitHub/5puzzle/alu.v:1]
-INFO: [Synth 8-638] synthesizing module 'memory' [C:/Users/kanami/Documents/GitHub/5puzzle/memory.v:1]
-INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [C:/Users/kanami/Documents/GitHub/5puzzle/memory.v:1]
-INFO: [Synth 8-638] synthesizing module 'pc' [C:/Users/kanami/Documents/GitHub/5puzzle/pc.v:1]
-INFO: [Synth 8-256] done synthesizing module 'pc' (5#1) [C:/Users/kanami/Documents/GitHub/5puzzle/pc.v:1]
-INFO: [Synth 8-638] synthesizing module 'imem' [C:/Users/kanami/Documents/GitHub/5puzzle/imem.v:1]
-INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/kanami/Documents/GitHub/5puzzle/imem.v:6]
-INFO: [Synth 8-256] done synthesizing module 'imem' (6#1) [C:/Users/kanami/Documents/GitHub/5puzzle/imem.v:1]
-INFO: [Synth 8-638] synthesizing module 'decoder' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:1]
-INFO: [Synth 8-256] done synthesizing module 'decoder' (7#1) [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:1]
-INFO: [Synth 8-638] synthesizing module 'io' [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:1]
+INFO: [Synth 8-638] synthesizing module 'top' [Z:/Documents/5puzzle/top.v:1]
+INFO: [Synth 8-638] synthesizing module 'sel' [Z:/Documents/5puzzle/sel.v:1]
+INFO: [Synth 8-256] done synthesizing module 'sel' (1#1) [Z:/Documents/5puzzle/sel.v:1]
+INFO: [Synth 8-638] synthesizing module 'register' [Z:/Documents/5puzzle/register.v:1]
+INFO: [Synth 8-256] done synthesizing module 'register' (2#1) [Z:/Documents/5puzzle/register.v:1]
+INFO: [Synth 8-638] synthesizing module 'alu' [Z:/Documents/5puzzle/alu.v:1]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/alu.v:7]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/alu.v:7]
+INFO: [Synth 8-256] done synthesizing module 'alu' (3#1) [Z:/Documents/5puzzle/alu.v:1]
+INFO: [Synth 8-638] synthesizing module 'memory' [Z:/Documents/5puzzle/memory.v:1]
+INFO: [Synth 8-256] done synthesizing module 'memory' (4#1) [Z:/Documents/5puzzle/memory.v:1]
+INFO: [Synth 8-638] synthesizing module 'pc' [Z:/Documents/5puzzle/pc.v:1]
+INFO: [Synth 8-256] done synthesizing module 'pc' (5#1) [Z:/Documents/5puzzle/pc.v:1]
+INFO: [Synth 8-638] synthesizing module 'imem' [Z:/Documents/5puzzle/imem.v:1]
+INFO: [Synth 8-155] case statement is not full and has no default [Z:/Documents/5puzzle/imem.v:6]
+INFO: [Synth 8-256] done synthesizing module 'imem' (6#1) [Z:/Documents/5puzzle/imem.v:1]
+INFO: [Synth 8-638] synthesizing module 'decoder' [Z:/Documents/5puzzle/decoder.v:1]
+INFO: [Synth 8-256] done synthesizing module 'decoder' (7#1) [Z:/Documents/5puzzle/decoder.v:1]
+INFO: [Synth 8-638] synthesizing module 'io' [Z:/Documents/5puzzle/io.v:1]
 	Parameter SEG_U bound to: 8'b11000001 
 	Parameter SEG_P bound to: 8'b10001100 
 	Parameter SEG_D bound to: 8'b10100001 
@@ -61,14 +61,14 @@ INFO: [Synth 8-638] synthesizing module 'io' [C:/Users/kanami/Documents/GitHub/5
 	Parameter SHITA bound to: 2'b01 
 	Parameter HIDARI bound to: 2'b10 
 	Parameter MIGI bound to: 2'b11 
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:73]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:73]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:102]
-INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:102]
-INFO: [Synth 8-256] done synthesizing module 'io' (8#1) [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:1]
-INFO: [Synth 8-638] synthesizing module 'divider' [C:/Users/kanami/Documents/GitHub/5puzzle/divider.v:1]
-INFO: [Synth 8-256] done synthesizing module 'divider' (9#1) [C:/Users/kanami/Documents/GitHub/5puzzle/divider.v:1]
-INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [C:/Users/kanami/Documents/GitHub/5puzzle/top.v:1]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:73]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:73]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma parallel_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:102]
+INFO: [Synth 8-3536] HDL ADVISOR - Pragma full_case detected. Simulation mismatch may occur [Z:/Documents/5puzzle/io.v:102]
+INFO: [Synth 8-256] done synthesizing module 'io' (8#1) [Z:/Documents/5puzzle/io.v:1]
+INFO: [Synth 8-638] synthesizing module 'divider' [Z:/Documents/5puzzle/divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'divider' (9#1) [Z:/Documents/5puzzle/divider.v:1]
+INFO: [Synth 8-256] done synthesizing module 'top' (10#1) [Z:/Documents/5puzzle/top.v:1]
 WARNING: [Synth 8-3331] design decoder has unconnected port op[19]
 WARNING: [Synth 8-3331] design decoder has unconnected port op[18]
 WARNING: [Synth 8-3331] design decoder has unconnected port op[17]
@@ -162,7 +162,7 @@ WARNING: [Synth 8-3331] design alu has unconnected port in0[2]
 WARNING: [Synth 8-3331] design alu has unconnected port in0[1]
 WARNING: [Synth 8-3331] design alu has unconnected port in0[0]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 317.133 ; gain = 106.789
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:10 . Memory (MB): peak = 362.922 ; gain = 152.516
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -172,38 +172,38 @@ Report Check Netlist:
 |1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
 +------+------------------+-------+---------+-------+------------------+
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 317.133 ; gain = 106.789
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:12 . Memory (MB): peak = 362.922 ; gain = 152.516
 ---------------------------------------------------------------------------------
 INFO: [Device 21-403] Loading part xc7a35tcpg236-1
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]
-Finished Parsing XDC File [C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
+Parsing XDC File [Z:/Documents/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]
+Finished Parsing XDC File [Z:/Documents/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [Z:/Documents/5puzzle/5puzzle.srcs/constrs_3/new/5puzzle.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/top_propImpl.xdc].
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 623.645 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 669.055 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:13 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:22 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-5544] ROM "regis_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "regis_reg[15]" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
@@ -273,22 +273,22 @@ INFO: [Synth 8-5544] ROM "op" won't be mapped to Block RAM because address size 
 INFO: [Synth 8-5544] ROM "pc_we" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "alu_op" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
 INFO: [Synth 8-5544] ROM "pc_in" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
-INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:53]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [Z:/Documents/5puzzle/io.v:53]
 INFO: [Synth 8-5546] ROM "digit" won't be mapped to RAM because it is too sparse
-WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/alu.v:14]
-WARNING: [Synth 8-327] inferring latch for variable 'op_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/imem.v:9]
-WARNING: [Synth 8-327] inferring latch for variable 'pc_in_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:15]
-WARNING: [Synth 8-327] inferring latch for variable 'src0_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:14]
-WARNING: [Synth 8-327] inferring latch for variable 'src1_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:13]
-WARNING: [Synth 8-327] inferring latch for variable 'dst_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:12]
-WARNING: [Synth 8-327] inferring latch for variable 'reg_we_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:17]
-WARNING: [Synth 8-327] inferring latch for variable 'sel1_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:18]
-WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:20]
-WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [C:/Users/kanami/Documents/GitHub/5puzzle/decoder.v:11]
-WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[1]' [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:106]
-WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[0]' [C:/Users/kanami/Documents/GitHub/5puzzle/io.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'out_reg' [Z:/Documents/5puzzle/alu.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'op_reg' [Z:/Documents/5puzzle/imem.v:9]
+WARNING: [Synth 8-327] inferring latch for variable 'pc_in_reg' [Z:/Documents/5puzzle/decoder.v:15]
+WARNING: [Synth 8-327] inferring latch for variable 'src0_reg' [Z:/Documents/5puzzle/decoder.v:14]
+WARNING: [Synth 8-327] inferring latch for variable 'src1_reg' [Z:/Documents/5puzzle/decoder.v:13]
+WARNING: [Synth 8-327] inferring latch for variable 'dst_reg' [Z:/Documents/5puzzle/decoder.v:12]
+WARNING: [Synth 8-327] inferring latch for variable 'reg_we_reg' [Z:/Documents/5puzzle/decoder.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'sel1_reg' [Z:/Documents/5puzzle/decoder.v:18]
+WARNING: [Synth 8-327] inferring latch for variable 'data_reg' [Z:/Documents/5puzzle/decoder.v:20]
+WARNING: [Synth 8-327] inferring latch for variable 'alu_op_reg' [Z:/Documents/5puzzle/decoder.v:11]
+WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[1]' [Z:/Documents/5puzzle/io.v:106]
+WARNING: [Synth 8-327] inferring latch for variable 'buff_reg[0]' [Z:/Documents/5puzzle/io.v:106]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:24 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -644,7 +644,7 @@ WARNING: [Synth 8-3332] Sequential element (r0/regis_reg[13][21]) is unused and 
 WARNING: [Synth 8-3332] Sequential element (r0/regis_reg[13][20]) is unused and will be removed from module top.
 INFO: [Common 17-14] Message 'Synth 8-3332' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:30 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:32 ; elapsed = 00:00:41 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP and Shift Register Reporting
@@ -674,10 +674,10 @@ Start Timing Optimization
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:38 . Memory (MB): peak = 623.645 ; gain = 413.301
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 669.055 ; gain = 458.648
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 625.617 ; gain = 415.273
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:49 . Memory (MB): peak = 671.082 ; gain = 460.676
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -689,7 +689,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Technology Mapping : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -713,7 +713,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -726,7 +726,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -738,25 +738,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:50 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -803,11 +803,11 @@ Report Instance Areas:
 |8     |  r0     |register |   984|
 +------+---------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 686.719 ; gain = 476.313
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 701 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:32 . Memory (MB): peak = 641.027 ; gain = 124.172
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 641.027 ; gain = 430.684
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:31 ; elapsed = 00:00:39 . Memory (MB): peak = 686.719 ; gain = 127.762
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:51 . Memory (MB): peak = 686.719 ; gain = 476.313
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Netlist 29-17] Analyzing 68 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
@@ -821,7 +821,7 @@ INFO: [Project 1-111] Unisim Transformation Summary:
 INFO: [Common 17-83] Releasing license: Synthesis
 231 Infos, 212 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 641.027 ; gain = 430.684
-INFO: [Common 17-1381] The checkpoint 'C:/Users/kanami/Documents/GitHub/5puzzle/5puzzle.runs/synth_1/top.dcp' has been generated.
-report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 641.027 ; gain = 0.000
-INFO: [Common 17-206] Exiting Vivado at Wed Jul 19 12:53:15 2017...
+synth_design: Time (s): cpu = 00:00:40 ; elapsed = 00:00:47 . Memory (MB): peak = 686.719 ; gain = 447.473
+INFO: [Common 17-1381] The checkpoint 'Z:/Documents/5puzzle/5puzzle.runs/synth_1/top.dcp' has been generated.
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 686.719 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 21 09:21:42 2017...
